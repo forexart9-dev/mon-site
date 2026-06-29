@@ -223,7 +223,12 @@
           </div>
         </div>
 
-        <form class="contact-form reveal" id="contact-form" novalidate>
+        <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/forexart9@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Nouveau message depuis GrowthStack">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" autocomplete="off" tabindex="-1" aria-hidden="true" style="display: none;">
+
           <label for="name">Nom</label>
           <input id="name" name="name" type="text" autocomplete="name" required minlength="2">
           <small class="error-message" data-error-for="name"></small>
@@ -237,7 +242,7 @@
           <small class="error-message" data-error-for="message"></small>
 
           <button class="button button-primary form-submit" type="submit">
-            Commencer
+            Envoyer
             <i data-lucide="send"></i>
           </button>
           <p class="form-status" role="status" aria-live="polite" data-form-status></p>

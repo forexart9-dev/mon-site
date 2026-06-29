@@ -105,20 +105,18 @@ form?.addEventListener("input", (event) => {
 });
 
 form?.addEventListener("submit", (event) => {
-  event.preventDefault();
-
   const fields = Array.from(form.querySelectorAll("input, textarea"));
   const isValid = fields.every(validateField);
 
   if (!isValid) {
+    event.preventDefault();
     statusMessage.textContent = "Corrigez les champs indiqués avant l’envoi.";
     statusMessage.style.color = "#c2410c";
     return;
   }
 
-  statusMessage.textContent = "Merci, votre demande a bien été prise en compte.";
+  statusMessage.textContent = "Envoi du message...";
   statusMessage.style.color = "#0f766e";
-  form.reset();
 });
 
 refreshIcons();
