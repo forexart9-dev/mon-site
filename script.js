@@ -1,11 +1,11 @@
 const partnerStackUrl = "https://www.partnerstack.com/";
 
-// Remplace automatiquement tous les CTA par le lien PartnerStack centralise.
 document.querySelectorAll("[data-partner-link]").forEach((link) => {
   link.href = partnerStackUrl;
 });
 
 const header = document.querySelector("[data-header]");
+const isArticlePage = Boolean(document.querySelector(".article-page"));
 const menu = document.querySelector("[data-menu]");
 const navToggle = document.querySelector(".nav-toggle");
 const navIcon = navToggle?.querySelector("i");
@@ -17,7 +17,7 @@ const refreshIcons = () => {
 };
 
 const updateHeader = () => {
-  header?.classList.toggle("is-scrolled", window.scrollY > 12);
+  header?.classList.toggle("is-scrolled", isArticlePage || window.scrollY > 12);
 };
 
 const closeMenu = () => {
@@ -49,7 +49,6 @@ document.querySelectorAll(".nav-menu a").forEach((link) => {
 window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
 
-// Anime les blocs seulement lorsqu'ils entrent dans le viewport.
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -67,7 +66,6 @@ document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe
 const form = document.querySelector("#contact-form");
 const statusMessage = document.querySelector("[data-form-status]");
 
-// Validation legere et lisible pour eviter les formulaires incomplets.
 const validators = {
   name(value) {
     return value.trim().length >= 2 ? "" : "Veuillez saisir au moins 2 caractères.";
@@ -118,7 +116,7 @@ form?.addEventListener("submit", (event) => {
     return;
   }
 
-  statusMessage.textContent = "Merci, votre message est prêt à être envoyé.";
+  statusMessage.textContent = "Merci, votre demande a bien été prise en compte.";
   statusMessage.style.color = "#0f766e";
   form.reset();
 });

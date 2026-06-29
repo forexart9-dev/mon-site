@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SaaS workflow background</title>
+  <desc id="desc">Dark professional SaaS workflow background with connected automation cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset=".55" stop-color="#0d1b2f"/>
+      <stop offset="1" stop-color="#15314a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f1d27a"/>
+      <stop offset="1" stop-color="#d6a43a"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1350" cy="130" r="280" fill="#24305f" opacity=".38"/>
+  <circle cx="230" cy="780" r="360" fill="#0f766e" opacity=".27"/>
+  <g opacity=".22" stroke="#ffffff">
+    <path d="M0 210h1600M0 450h1600M0 690h1600M320 0v900M640 0v900M960 0v900M1280 0v900"/>
+  </g>
+  <g fill="none" stroke="url(#teal)" stroke-width="10" stroke-linecap="round" opacity=".7">
+    <path d="M355 452c145-130 290-130 435 0s290 130 435 0"/>
+    <path d="M490 583c110-82 220-82 330 0s220 82 330 0"/>
+  </g>
+  <g fill="#ffffff" opacity=".13">
+    <rect x="235" y="278" width="270" height="170" rx="24"/>
+    <rect x="660" y="206" width="280" height="210" rx="24"/>
+    <rect x="1080" y="300" width="285" height="184" rx="24"/>
+    <rect x="512" y="530" width="285" height="150" rx="24"/>
+    <rect x="918" y="558" width="250" height="140" rx="24"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="370" cy="352" r="44" opacity=".9"/>
+    <circle cx="800" cy="312" r="52" opacity=".9"/>
+    <circle cx="1222" cy="392" r="44" opacity=".9"/>
+    <circle cx="656" cy="606" r="38" opacity=".9"/>
+    <circle cx="1043" cy="628" r="38" opacity=".9"/>
+  </g>
+  <g fill="url(#gold)">
+    <rect x="408" y="338" width="54" height="28" rx="14"/>
+    <rect x="852" y="297" width="64" height="30" rx="15"/>
+    <rect x="1260" y="378" width="54" height="28" rx="14"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity=".5" stroke-width="8" stroke-linecap="round">
+    <path d="M285 408h164"/>
+    <path d="M704 370h160"/>
+    <path d="M1128 445h172"/>
+    <path d="M556 650h156"/>
+    <path d="M968 672h120"/>
+  </g>
+</svg>
